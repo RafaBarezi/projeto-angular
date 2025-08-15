@@ -13,7 +13,12 @@ import { CommonModule } from '@angular/common';
 export class SegundoComponenteComponent {
 
 //permite inserir expressões dentro de strings no template HTML, exibindo o resultado dessas expressões como parte do texto
-  nome = "Meu nome é User"
-  dataNascimento = new Date(1990, 5, 15);
+  nome = "Meu nome é Cliente";
+  dataNascimento = new Date(1990, 9, 15) ;
+// criamos o endereço e fazemos a property binding no html 
+  urlImagem = "/assets/image.jpeg";
 
+mostrarDataNascimento(){
+  alert(`A data de nascimento do cliente é: ${this.dataNascimento}`);
+}  
 }

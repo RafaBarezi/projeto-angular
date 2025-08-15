@@ -13,6 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
             "outputPath": "dist/projeto-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -20,12 +24,6 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
             "styles": [
               "src/styles.css"
             ],

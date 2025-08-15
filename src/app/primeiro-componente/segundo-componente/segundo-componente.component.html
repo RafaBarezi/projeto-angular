@@ -3,5 +3,8 @@
 
 <h2>Aprofundando os conhecimentos em templates!</h2>
 <!-- deixando o nome com maiusculas usando pipes--> 
-<p>Nome {{ nome | uppercase}} </p>
-<p>data de nascimento {{ dataNascimento |  date:"dd/MM/yyyy"}}</p>
+<img [src]= "urlImagem" width="300">
+<p>Nome: {{ nome | uppercase}} </p>
+<p>data nascimento: {{ dataNascimento |  date:"dd/MM/yyyy"}}</p>
+<!--  event binding disparando eventos na tela: --> 
+<button (click) = "mostrarDataNascimento()"type="button">mostrar data de nascimento</button>
